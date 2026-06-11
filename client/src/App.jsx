@@ -1,4 +1,5 @@
-﻿import { Route, Routes } from "react-router-dom";
+﻿import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Home from "./pages/Home.jsx";
 import Market from "./pages/Market.jsx";

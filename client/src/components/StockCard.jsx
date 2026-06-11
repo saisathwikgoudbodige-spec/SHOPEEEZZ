@@ -1,4 +1,5 @@
-﻿import { Link } from "react-router-dom";
+﻿import React from "react";
+import { Link } from "react-router-dom";
 
 export default function StockCard({ stock, onTrade }) {
   const positive = stock.changePercent >= 0;

@@ -1,4 +1,5 @@
-﻿import { useEffect, useState } from "react";
+﻿import React from "react";
+import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import api from "../api.js";
 import PriceChart from "../components/PriceChart.jsx";

@@ -1,4 +1,5 @@
-﻿import { Link, NavLink } from "react-router-dom";
+﻿import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import { useAuth } from "../context/AuthContext.jsx";
 
 export default function Navbar() {
@@ -12,12 +13,14 @@ export default function Navbar() {
           <NavLink className="nav-link" to="/market">Market</NavLink>
           <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink>
           {isAdmin && <NavLink className="nav-link" to="/admin">Admin</NavLink>}
-          {user ? (
-            <>
-              <span className="nav-user">{user.name}</span>
-              <button className="btn btn-sm btn-outline-light" onClick={logout}>Logout</button>
-            </>
-          ) : (
+         {user ? (
+  <>
+    {!isAdmin && <span className="nav-user">{user.name}</span>}
+    <button className="btn btn-sm btn-outline-light" onClick={logout}>
+      Logout
+    </button>
+  </>
+) : (
             <>
               <NavLink className="nav-link" to="/login">Login</NavLink>
               <NavLink className="btn btn-sm btn-primary" to="/register">Register</NavLink>

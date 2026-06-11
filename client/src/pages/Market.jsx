@@ -1,4 +1,5 @@
-﻿import { useEffect, useMemo, useState } from "react";
+﻿import React from "react";
+import { useEffect, useMemo, useState } from "react";
 import api from "../api.js";
 import StockCard from "../components/StockCard.jsx";
 import { useAuth } from "../context/AuthContext.jsx";
