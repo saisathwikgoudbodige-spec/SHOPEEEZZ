@@ -54,15 +54,15 @@ Backend API: https://shopeeezz.onrender.com
 
 ### Market Dashboard
 
-(Add Screenshot)
+![Market Dashboard](screenshots/market-dashboard.png)
 
 ### Portfolio Management
 
-(Add Screenshot)
+![Portfolio Management](screenshots/portfolio-management.png)
 
 ### Admin Dashboard
 
-(Add Screenshot)
+![Admin Dashboard](screenshots/admin-dashboard.png)
 
 ---
 
